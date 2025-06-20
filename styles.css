@@ -189,4 +189,53 @@ body {
 .text:hover:before {
     content:"replyi nako HAHAHAHA";
     font-size:25px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 480px) {
+  .valentines-day-card {
+    width: 300px;
+    height: 225px;
+  }
+
+  .valentines-day-card:before,
+  .valentines-day-card:after {
+    /* Hide the decorative background elements on smaller screens to reduce clutter */
+    display: none;
+  }
+
+  .text {
+    font-size: 22px;
+    width: 280px;
+    top: 250px;
+  }
+  
+  .text:hover:before {
+    font-size: 18px;
+  }
+  
+  .hover {
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust heart animations for the smaller card */
+  .heartOne {
+    left: 70px;
+  }
+
+  .heartTwo {
+    left: 200px;
+  }
+
+  .heartThree {
+    left: 60px;
+  }
+
+  .heartFour {
+    left: 240px;
+  }
+
+  .heartFive {
+    left: 110px;
+  }
 } 
